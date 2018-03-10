@@ -1,0 +1,7 @@
+#!/bin/bash
+if pgrep -x "redshift" > /dev/null
+then
+	killall redshift
+else
+	redshift -l 41.97959:-87.90446 &> /dev/null &
+fi

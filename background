@@ -1,5 +1,5 @@
-# Change the desktop background and update the default and lockscreen
-#!/bin/bash
+#!/bin/sh
+
 cp $1 ~/Pictures/Wallpapers/default &&
 betterlockscreen -u ~/Pictures/Wallpapers/default dimblur 2.5 &&
 feh --bg-fill ~/Pictures/Wallpapers/default

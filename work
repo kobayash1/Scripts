@@ -1,3 +1,5 @@
 #!/bin/sh
 feh --bg-scale ~/Pictures/Wallpapers/work.png &
-killall polybar
+killall polybar &
+mpc pause
+i3-msg 'workspace 10'

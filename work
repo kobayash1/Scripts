@@ -1,5 +1,6 @@
 #!/bin/sh
 feh --bg-scale ~/Pictures/Wallpapers/work.png &
 killall polybar &
-mpc pause
+mpc pause &
+amixer sset Master mute
 i3-msg 'workspace 10'
